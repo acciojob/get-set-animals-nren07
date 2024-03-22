@@ -6,25 +6,32 @@ class Animal {
 	get species(){
 		return this.species;
 	}
-	makeSound(logs){
-		console.log(logs);
+	makeSound(){
+		console.log('The ${this.species} makes a sound');
 	}
 }
 
 class Dog extends Animal {
-	let sound="woof";
+	constructor(species){
+		super(species);
+		this.sound="woof"
+	}
 	bark(){
-		makeSound(sound);
+		console.log(this.sound);
 	}
 	
 }
 
 class Cat extends Animal {
-	const sound="purr";
+	constructor(species){
+		super(species);
+		this.sound="purr"
+	}
 	purr(){
-		makeSound(sound);
+		console.log(this.sound);
 	}
 }
+
 
 // Do not change the code below this line
 window.Animal = Animal;
