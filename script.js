@@ -15,23 +15,23 @@ class Animal {
 }
 
 class Dog extends Animal {
+	let sound="woof"
 	constructor(species){
 		super(species);
-		this.sound="woof"
 	}
 	bark(){
-		console.log(this.sound);
+		console.log(sound);
 	}
 	
 }
 
 class Cat extends Animal {
+	let sound="purr"
 	constructor(species){
 		super(species);
-		this.sound="purr"
 	}
 	purr(){
-		console.log(this.sound);
+		console.log(sound);
 	}
 }
 
